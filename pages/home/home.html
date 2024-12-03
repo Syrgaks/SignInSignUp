@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+
+<body>
+    <header class="shadow-xl ">
+        <div class="w-[700px] h-[50px] m-auto flex items-center justify-between">
+
+            <div>
+                <h1 class="text-3xl font-bold italic text-green-800">SCANDAL</h1>
+            </div>
+            <nav class="text-xl font-semibold">
+                <button id="logout" class="border p-2 bg-red-500 rounded-xl text-white">Выйти</button>
+            </nav>
+        </div>
+    </header>
+    <div class="text-center">
+        <h1 class="text-3xl font-bold my-4">Добро пожаловать , <span id="userName" class="text-green-500"></span>!</h1>
+    </div>
+    <script src="./home.js"></script>
+</body>
+
+</html>
